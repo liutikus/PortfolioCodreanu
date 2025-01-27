@@ -40,6 +40,8 @@ margin-top: 5px;
 .info-links a{
     padding: 1.5em;
     color:#adb5bd ;
+    transition: background-color 1s ease 0s;
+    transition: color 0.5s ease 0s;
 }
 
 .info-links a:hover{
@@ -77,7 +79,7 @@ margin-top: 5px;
 .menu-content{
     height: fit-content;
     width: 100%;
-    background-color: #343a40;
+    
 
 }
 
@@ -90,24 +92,25 @@ margin-top: 5px;
     border-width: 1px;
     color: #adb5bd;
     border-color: #495057;
+    background-color: #343a40;
+    transition: background-color 1s ease 0s;
+    transition: color 0.5s ease 0s;
 
 }
 
 .menu a:hover{
     color: black;
+    background-color: #495057;
 }
 
 
-
-
-
-@media only screen and (max-width: 1050px) {
+@media only screen and (max-width: 1150px) {
 .nav-container{
     font-size: 1em;
 }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
  .info-links{
     display: none;
  }

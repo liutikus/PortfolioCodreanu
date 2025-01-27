@@ -1,26 +1,30 @@
 .sidebar-container{
-    background-color: #212529 ;
+    background-color: #212529;
     width: fit-content;
     top: 30%;
     position: fixed;
     padding: 10px 10px 0px 10px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
 }
 
 .sidebar-container a{
     font-size: 3em;
     display: block;
     color:#6c757d ;
+    transition: background-color 1s ease 0s;
+    transition: color 0.5s ease 0s;
 
 }
 
 .sidebar-container a:hover {
-    color: #343a40;
+    color: #e9ecef;
 
 
     
 }
 
-@media only screen and (max-width: 1050px) {
+@media only screen and (max-width: 1150px) {
     .sidebar-container{
         font-size: 0.8em;
     }

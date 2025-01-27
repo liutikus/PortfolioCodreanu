@@ -7,10 +7,10 @@ const HamMenu = ({burgerToggle}) => {
         <div className={burgerToggle ? 'menu active' : 'menu'}>
             <div className="blur">
                 <div className="menu-content">
-                <a href="#">Home</a>
-                <a href="#">About Me</a>
-                <a href="#">Projects</a>
-                <a href="#">Contact</a>
+                <a href="#">home</a>
+                <a href="#">about me</a>
+                <a href="#">projects</a>
+                <a href="#">contact</a>
                 </div>
             </div>
         </div>

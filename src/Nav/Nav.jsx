@@ -18,14 +18,14 @@ const Nav = () => {
       <div className="nav-container">
         <div className="logo">
         <span><FaConnectdevelop/></span>
-            <p>Nicolae Codreanu</p>
+            <p>nicolae codreanu</p>
         </div>
         <div className="info-links">
 
-            <a href="#">Home</a>
-            <a href="#">About Me</a>
-            <a href="#">Projects</a>
-            <a href="#">Contact</a>
+            <a href="#">home</a>
+            <a href="#">about me</a>
+            <a href="#">projects</a>
+            <a href="#">contact</a>
         </div>
         <div className="burger-icon">
     <Burger isOpen={burgerToggle} onClick={handleToggle}/>

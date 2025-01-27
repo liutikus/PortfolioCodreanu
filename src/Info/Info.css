@@ -1,0 +1,13 @@
+.info-container {
+    color: #e9ecef;
+    position: absolute;
+    left: 20%;
+    right: 2%;
+    top: 20%;
+    font-size: 2em;
+    cursor: default;
+    margin-top: 2em;
+}
+
+
+
