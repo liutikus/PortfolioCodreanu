@@ -32,8 +32,8 @@ const Info = () => {
         <div className="type-info">
       <Typewriter 
       options={{
-        strings: ['hi, my name is nicolae codreanu and'],
-        autoStart: false,
+        strings: ['hi, my name is nicolae codreanu and...'],
+        autoStart: true,
         loop: true,
       }}/>
         </div>

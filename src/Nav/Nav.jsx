@@ -4,6 +4,7 @@ import '@animated-burgers/burger-squeeze/dist/styles.css'
 import './Nav.css'
 import HamMenu from '../Components/HamMenu'
 import { FaConnectdevelop } from "react-icons/fa";
+import { Spin as Hamburger, Spin } from 'hamburger-react'
 
 
 
@@ -27,9 +28,10 @@ const Nav = () => {
             <a href="#">projects</a>
             <a href="#">contact</a>
         </div>
-        <div className="burger-icon">
-    <Burger isOpen={burgerToggle} onClick={handleToggle}/>
+        <div className="burger-icon"onClick={handleToggle}>
+          <Spin onClick={handleToggle}/>
         </div>
+ 
       </div>
     <HamMenu burgerToggle={burgerToggle}/>
 
