@@ -1,5 +1,6 @@
 import React from 'react'
 import './Projects.css'
+import projectImg1 from '../assets/Screenshot (11).png'
 import { motion } from "motion/react"
 
 
@@ -22,7 +23,7 @@ const Projects = () => {
              whileInView={{opacity: 1, y:0, transition: {delay: 0.2, duration: 0.5}}}
              viewport={{once: true, amount:0.5}}
         className="card-projects">
-        <img src="src\assets\Screenshot (11).png" alt="zfg" />
+        <img src={projectImg1} alt="zfg" />
       <p>asdfasdfsadfasddfsad</p>
 
         </motion.div>
@@ -32,7 +33,7 @@ const Projects = () => {
              viewport={{once: true, amount:0.4}}
         className="card-projects">
       <p>asdfasdfsadfasddfsad</p>
-        <img src="src\assets\Screenshot (11).png" alt="zfg" />
+        <img src={projectImg1} alt="zfg" />
 
         </motion.div>
         <motion.div 
@@ -40,7 +41,7 @@ const Projects = () => {
              whileInView={{opacity: 1, y:0, transition: {delay: 0.2, duration: 0.5}}}
              viewport={{once: true, amount:0.3}}
         className="card-projects">
-        <img src="src\assets\Screenshot (11).png" alt="zfg" />
+        <img src={projectImg1} alt="zfg" />
       <p>asdfasdfsadfasddfsad</p>
 
         </motion.div>
