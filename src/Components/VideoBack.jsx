@@ -4,8 +4,8 @@ const VideoBack = () => {
   return (
     <div >
         <div className='video-back'></div>
-      <video className='video' loop muted >
-        <source src={videobackground} autoPlay type='video/mp4' />
+      <video className='video' autoPlay loop muted >
+        <source src={videobackground} type='video/mp4' />
       </video>
     </div>
   )
