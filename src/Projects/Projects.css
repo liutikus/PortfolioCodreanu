@@ -1,60 +1,106 @@
-.projects-container{
-    position: absolute;
-    top: 100%;
-    left: 15%;
-    padding-bottom: 2em;
-    color: #e9ecef;
+.projects-container {
+  /* position: absolute; */
+  top: 100%;
+  margin-left: 15%;
+  padding-bottom: 2em;
+  color: #e9ecef;
+  width: 100%;
+  margin-top: 250px;
 }
 
-.card-projects{
-    width: fit-content;
-    display: flex;
-    margin-bottom: 2em;
-    padding-bottom: 2em;
-   border-style: solid;
-   border-radius: 30px;
-   padding: 1em;
-   border-color: #adb5bd;
-   border-width: 1px;
+.card-projects {
+  width: fit-content;
+  display: flex;
+  margin-bottom: 2em;
+  padding-bottom: 2em;
+  border-style: solid;
+  border-radius: 30px;
+  padding: 1em;
+  border-color: #adb5bd;
+  border-width: 1px;
+  margin-inline-start: 2em;
+  cursor: none;
+
 }
 
-.title{
-    font-size: 4em;
-    /* padding: 0em 0em 0.2em 1em; */
-    text-align: start;
-    padding-bottom: 0.2em;
+.title {
+  font-size: 4em;
+  /* padding: 0em 0em 0.2em 1em; */
+  text-align: start;
+  padding-bottom: 0.7em;
 }
 
-.projects-container img{
-    height: 250px;
+.projects-container img {
+  height: 250px;
+  width: 445px;
+  border-radius: 20px;
+}
+
+.card-projects p {
+  padding-inline: 1em;
+  cursor: default;
+  max-width: 250px;
+  max-height: 250px;
+  font-size: 1.5em;
+}
+
+.info-project-contaienr {
+  position: relative;
+}
+
+.project-info-img {
+  position: absolute;
+  background-color: black;
+  height: 255px;
+  width: 450px;
+  border-radius: 15px;
+  opacity: 0;
+  transition: opacity 0.5s ease 0s;
+}
+
+.cursor{
+    position: fixed;
     border-radius: 20px;
-    cursor: pointer;
-
-    
+    height: fit-content;
+    width: fit-content;
+    top: 0;
+    left: 0;
+    background-color: #f8f9fa;
+    color: black;
+    padding-inline: 5px;
 }
 
-.card-projects p{
-    padding-inline: 1em;
-    cursor: default;
-}
+
+
 
 @media only screen and (max-width: 1150px) {
-   .projects-container img{
+  .projects-container img {
     height: 200px;
-   }
+  }
 }
 
 @media only screen and (max-width: 760px) {
-.card-projects{
+  .card-projects {
     display: block;
-}
-.projects-container img{
+  }
+  .projects-container img {
     height: 180px;
-   }
+    width: 320px;
+  }
+
+  .project-info-img {
+    height: 180px;
+    width: 320px;
+  }
 }
 
 @media only screen and (max-width: 500px) {
-    .projects-container img{
-        height: 150px;
-    }
-    }
+  .projects-container img {
+    height: 150px;
+    width: 265px;
+  }
+  .project-info-img {
+    height: 150px;
+    width: 265px;
+  }
+}

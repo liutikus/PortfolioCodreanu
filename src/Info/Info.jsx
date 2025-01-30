@@ -9,7 +9,7 @@ const Info = () => {
     const [text, setText] = useState('code')
 
     
-    const codeText = ['code', '#ode', 'c%de', 'co^e', 'cod&', '#%^&']
+    const codeText = ['code', '#ode', 'c%de', 'co$e', 'cod&', '#%^&']
 
     useEffect(() => {
         let index = 0;
@@ -27,16 +27,22 @@ const Info = () => {
     
   return (
     <div>
+      <div className="main-info-container">
 
-        <div className="info-container">
+      <div className="main-type-container">
+        <div className="type-background"></div>
         <div className="type-info">
       <Typewriter 
       options={{
-        strings: ['hi, my name is nicolae codreanu and...'],
+        strings: ['hi, my name is nicolae codreanu'],
         autoStart: true,
         loop: true,
       }}/>
         </div>
+      </div>
+
+      </div>
+        <div className="info-container">
         <div className="info">
             <p>i'm a forntend developer who writes</p>
             <p>elegant, clean and efficient {text}</p>

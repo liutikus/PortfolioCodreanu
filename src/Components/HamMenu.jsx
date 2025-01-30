@@ -1,18 +1,29 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { CiHome, CiDesktop, CiCircleInfo } from "react-icons/ci";
+
 
 const HamMenu = ({burgerToggle}) => {
 
+function handleToggle (input){
+  const name = burgerToggle? `${input} active` : `${input}`
+
+  return name;
+}
   return (
     <div>
-        <div className={burgerToggle ? 'menu active' : 'menu'}>
-            <div className="blur">
+        <div className='menu'>
                 <div className="menu-content">
-                <a href="#">home</a>
-                <a href="#">about me</a>
-                <a href="#">projects</a>
-                <a href="#">contact</a>
+                  <div className={handleToggle('first-icon')}>
+                    <a href="#"><CiHome /></a>
                 </div>
-            </div>
+                <div className={handleToggle('second-icon')}>
+                  <a href="#"><CiDesktop/></a>
+                </div>
+                <div className={handleToggle('third-icon')}>
+                  <a href="#"><CiCircleInfo /></a>
+                </div>
+                
+                </div>
         </div>
       
     </div>

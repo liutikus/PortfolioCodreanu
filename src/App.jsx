@@ -5,6 +5,7 @@ import VideoBack from './Components/VideoBack'
 import SideBar from './SideBar/SideBar'
 import Info from './Info/Info'
 import Projects from './Projects/Projects'
+import Testprojects from './Components/testprojects'
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
       <SideBar/>
       <Info/>
       <Projects/>
+      <Testprojects/>
     </div>
   )
 }

@@ -27,9 +27,10 @@ const Nav = () => {
             <a href="#">about me</a>
             <a href="#">projects</a>
             <a href="#">contact</a>
+
         </div>
         <div className="burger-icon"onClick={handleToggle}>
-          <Spin onClick={handleToggle}/>
+          <Spin/>
         </div>
  
       </div>
