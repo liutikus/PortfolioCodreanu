@@ -11,6 +11,7 @@ body{
     height: 3em;
     overflow-y: hidden;
     
+    
 
 }
 
@@ -71,6 +72,7 @@ overflow-y: hidden;
     position: fixed;
     right: 0;
     width: 15vw;
+    z-index: 1000;
 
 }
 
