@@ -1,0 +1,61 @@
+.main-scroll-container{
+    padding-top: 4em;
+}
+.wrapper span {
+    max-width: 180px;
+    height: 5rem;
+    padding: 0 15px;
+    color:#e9ecef ;
+    object-fit: cover;
+    font-size: 5em;
+  }
+  
+  span:last-of-type {
+    padding-left: 0;
+  }
+
+  .icon{
+    padding-inline: 30px;
+  }
+  
+  .inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 5rem;
+  }
+  
+  .wrapper {
+    position: absolute;
+    display: flex;
+  }
+  
+  .positive {
+    display: flex;
+    animation: swipe var(--speed) linear infinite ;
+  }
+
+  .negative {
+    display: flex;
+    animation: negativeswipe var(--speed) linear infinite ;
+  }
+  
+  @keyframes swipe {
+    0% {
+      transform: translate(0);
+    }
+  
+    100% {
+      transform: translate(-100%);
+    }
+  }
+
+  @keyframes negativeswipe {
+    0% {
+      transform: translate(-100%);
+    }
+  
+    100% {
+      transform: translate(0%);
+    }
+  }

@@ -42,7 +42,7 @@ const CursorHover = () => {
       variants={variants}
         animate='default'
         // style={{display:'none'}}
-      >go to project</motion.div>
+      ></motion.div>
     </div>
   )
 }
