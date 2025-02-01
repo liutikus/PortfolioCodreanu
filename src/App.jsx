@@ -2,7 +2,6 @@ import React from 'react'
 import Nav from './Nav/Nav'
 import './index.css'
 import VideoBack from './Components/VideoBack'
-import SideBar from './SideBar/SideBar'
 import Info from './Info/Info'
 import Projects from './Projects/Projects'
 import Testprojects from './Components/testprojects'
@@ -38,7 +37,6 @@ const App = () => {
     <div>
       <Nav/>
      <VideoBack/>
-      {/* <SideBar/> */}
       <Info/>
        < InfiniteScrol images={images} speed={22000} />
       <Projects/>

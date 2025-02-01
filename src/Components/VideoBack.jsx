@@ -1,12 +1,10 @@
 import React from 'react'
-import videobackground from '../assets/background-video.mp4'
+import background from '../assets/background.png'
 const VideoBack = () => {
   return (
     <div >
-        <div className='video-back'></div>
-      <video className='video' autoPlay loop muted >
-        <source src={videobackground} type='video/mp4' />
-      </video>
+        <div className='img-back'></div>
+          <img className='img-background' src={background} alt="" />
     </div>
   )
 }
