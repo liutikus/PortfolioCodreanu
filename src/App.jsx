@@ -38,7 +38,7 @@ const App = () => {
     <div>
       <Nav/>
      <VideoBack/>
-      <SideBar/>
+      {/* <SideBar/> */}
       <Info/>
        < InfiniteScrol images={images} speed={22000} />
       <Projects/>
