@@ -1,55 +1,28 @@
 import React from 'react'
 import './InfiniteScroll.css'
 
-const InfiniteScrol = ({ images, speed = 5000 }) => {
+const InfiniteScrol = ({ images, speed, direction }) => {
 
   return (
     <div>
       <div className="main-scroll-container">
       <div className="inner">
       <div className="wrapper">
-        <section className='positive'style={{ "--speed": `${speed}ms` }}>
+        <section className={direction}style={{ "--speed": `${speed}ms` }}>
           {images.map(({ id, image }) => (
             <div className="icon" key={id}>
               <span>{image}</span>
             </div>
           ))}
         </section>
-        <section className='positive'style={{ "--speed": `${speed}ms` }}>
+        <section className={direction}style={{ "--speed": `${speed}ms` }}>
           {images.map(({ id, image }) => (
             <div className="icon" key={id}>
               <span>{image}</span>
             </div>
           ))}
         </section>
-        <section className='positive'style={{ "--speed": `${speed}ms` }}>
-          {images.map(({ id, image }) => (
-            <div className="icon" key={id}>
-              <span>{image}</span>
-            </div>
-          ))}
-        </section>
-      </div>
-    </div>
-      </div>
-      <div className="main-scroll-container">
-      <div className="inner">
-      <div className="wrapper">
-        <section className='negative'style={{ "--speed": `${speed}ms` }}>
-          {images.map(({ id, image }) => (
-            <div className="icon" key={id}>
-              <span>{image}</span>
-            </div>
-          ))}
-        </section>
-        <section className='negative'style={{ "--speed": `${speed}ms` }}>
-          {images.map(({ id, image }) => (
-            <div className="icon" key={id}>
-              <span>{image}</span>
-            </div>
-          ))}
-        </section>
-        <section className='negative'style={{ "--speed": `${speed}ms` }}>
+        <section className={direction}style={{ "--speed": `${speed}ms` }}>
           {images.map(({ id, image }) => (
             <div className="icon" key={id}>
               <span>{image}</span>
@@ -59,6 +32,7 @@ const InfiniteScrol = ({ images, speed = 5000 }) => {
       </div>
     </div>
       </div>
+     
     </div>
   )
 }
