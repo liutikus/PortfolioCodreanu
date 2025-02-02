@@ -19,7 +19,7 @@
     object-fit: cover;
     z-index: -2;
     top:0;
-    filter: blur(10px);
+    filter: blur(15px);
   
 }
 
@@ -39,8 +39,18 @@ a{
     text-decoration: none;
 }
 
-.main-test-container{
-    position: absolute;
-    top: 200%;
-    background-color: aliceblue;
+.under-cursor{
+    position: fixed;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    cursor: none;
+    pointer-events: none;
+    display: flex;
+    height: 200px;
+    width: 200px;
+    background-color: #adb5bd;
+    filter: blur(30px);
+    opacity: 0.1;
 }
+

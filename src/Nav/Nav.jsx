@@ -24,7 +24,6 @@ const Nav = () => {
         <div className="info-links">
 
             <a href="#">home</a>
-            <a href="#">about me</a>
             <a href="#">projects</a>
             <a href="#">contact</a>
 

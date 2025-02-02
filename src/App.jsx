@@ -10,6 +10,9 @@ import { SiAdobephotoshop } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
 
 import { FaCss3Alt, FaGithub, FaGitAlt, FaJsSquare, FaHtml5,FaReact, FaBootstrap } from "react-icons/fa";
+import Contact from './Contact/Contact'
+import AboutMe from './AboutMe/AboutMe'
+import CursorHover from './Components/CursorHover'
 
 
 
@@ -39,8 +42,11 @@ const App = () => {
      <VideoBack/>
       <Info/>
        < InfiniteScrol images={images} speed={22000} />
+       <AboutMe/>
       <Projects/>
+      <Contact/>
       <Testprojects/>
+      <CursorHover/>
     </div>
   )
 }

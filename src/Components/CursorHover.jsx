@@ -22,12 +22,10 @@ const CursorHover = () => {
 
     }, [])
 
-    console.log(mousePosition)
-
     const variants={
         default:{
-            x:mousePosition.x-10,
-            y:mousePosition.y-10,
+            x:mousePosition.x-100,
+            y:mousePosition.y-100,
             transition: {
                 type: "smooth",
                 duration: 0,
@@ -38,10 +36,9 @@ const CursorHover = () => {
 
   return (
     <div>
-      <motion.div className='cursor'
+      <motion.div className='under-cursor'
       variants={variants}
         animate='default'
-        // style={{display:'none'}}
       ></motion.div>
     </div>
   )

@@ -108,7 +108,7 @@ const mouseLeaveImg = ()=>{
             y: 0,
             transition: { delay: 0.2, duration: 0.5 },
           }}
-          viewport={{ once: false, amount: 0.1 }}
+          viewport={{ once: true, amount: 0.1 }}
           className="title"
         >
           projects
@@ -121,7 +121,7 @@ const mouseLeaveImg = ()=>{
             x: 0,
             transition: { delay: 0.3, duration: 0.8 },
           }}
-          viewport={{ once: false, amount: 0.1 }}
+          viewport={{ once: true, amount: 0.1 }}
           className="card-projects"
           onMouseEnter={mouseEnter}
           onMouseLeave={mouseLeave}
@@ -143,7 +143,7 @@ const mouseLeaveImg = ()=>{
             x: 0,
             transition: { delay: 0.3, duration: 0.8 },
           }}
-          viewport={{ once: false, amount: 0.1 }}
+          viewport={{ once: true, amount: 0.1 }}
           className="card-projects second-card"
           onMouseEnter={mouseEnter}
           onMouseLeave={mouseLeave}
@@ -166,7 +166,7 @@ const mouseLeaveImg = ()=>{
             x: 0,
             transition: { delay: 0.3, duration: 0.8 },
           }}
-          viewport={{ once: false, amount: 0.1 }}
+          viewport={{ once: true, amount: 0.1 }}
           className="card-projects"
           onMouseEnter={mouseEnter}
           onMouseLeave={mouseLeave}
