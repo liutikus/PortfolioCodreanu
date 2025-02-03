@@ -46,14 +46,18 @@ overflow-y: hidden;
 
 }
 
-.info-links a{
-    padding: 1.5em;
+.info-links button{
+    padding-inline: 1.5em;
+    background-color: #212529;
+    border-style: none;
     color:#adb5bd ;
     transition: background-color 1s ease 0s;
     transition: color 0.5s ease 0s;
+    cursor: pointer;
+    font-size: 20px;
 }
 
-.info-links a:hover{
+.info-links button:hover{
     color: black;
 }
 
@@ -71,9 +75,9 @@ overflow-y: hidden;
     padding-top: 1em;
     position: fixed;
     right: 0;
-    width: 15vw;
+    width: fit-content;
     z-index: 1000;
-
+    overflow-y: hidden;
 }
 
 
@@ -81,6 +85,7 @@ overflow-y: hidden;
 .first-icon{
     transform: translatex(100%);
     transition: all 0.5s;
+    overflow-y: hidden;
     
 }
 
@@ -99,7 +104,7 @@ overflow-y: hidden;
 }
 
 .active{
-    transform: translatex(10%);
+    transform: translatex(40%);
 }
 
 
@@ -113,8 +118,9 @@ overflow-y: hidden;
 
 
 
-.menu a{
+.menu button{
     display: block;
+    border-style: none;
     font-size: 3em;
     padding-top: 0.1em;
     border-bottom-style: solid;
@@ -124,15 +130,20 @@ overflow-y: hidden;
     background-color: #212529;
     transition: background-color 1s ease 0s;
     transition: color 0.5s ease 0s;
-    border-radius: 20px 0px 0px 20px;
+    border-radius: 10px 0px 0px 10px;
     z-index: 1000;
+    opacity: 0.8;
+    cursor: pointer;
+    padding-inline-start: 0.2em;
+    padding-inline-end: 1em;
+    
     
 
 }
 
-.menu a:hover{
-    color: black;
-    background-color: #495057;
+.menu button:hover{
+    color: #212529;
+    background-color: #adb5bd;
 }
 
 
@@ -160,4 +171,4 @@ overflow-y: hidden;
     }
  }
 
- 
+

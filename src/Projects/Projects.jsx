@@ -6,7 +6,7 @@ import CursorHover from "../Components/CursorHover";
 
 
 
-const Projects = () => {
+const Projects = ({innerRef}) => {
   const [mousePosition, setMousePosition] = useState({
     x: 0,
     y: 0
@@ -99,6 +99,7 @@ const mouseLeaveImg = ()=>{
   return (
     <div>
       <div
+      ref={innerRef}
         className="projects-container"
       >
         <motion.div

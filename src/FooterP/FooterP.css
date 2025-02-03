@@ -1,0 +1,18 @@
+.footer-container{
+    background-color: #0f1113;
+    height: fit-content;
+    padding-top: 1em;
+    color:#adb5bd;  
+    padding-inline: 40%;
+    overflow-y: hidden;
+    padding-block: 10px;
+
+}
+
+.footer-container span{
+    display: block;
+    padding-inline:50%;
+    font-size: 2em;
+    cursor: pointer;
+}
+

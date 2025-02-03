@@ -8,7 +8,7 @@ import { Spin as Hamburger, Spin } from 'hamburger-react'
 
 
 
-const Nav = () => {
+const Nav = ({handleHomeScroll,handleProjectsScroll,handleContactScroll, innerRef}) => {
 
     const [burgerToggle, setBurgerToggle] =useState(false)
 
@@ -16,16 +16,17 @@ const Nav = () => {
 
   return (
     <div>
-      <div className="nav-container">
+      <div ref={innerRef} className="nav-container">
         <div className="logo">
         <span><FaConnectdevelop/></span>
             <p>nicolae codreanu</p>
         </div>
         <div className="info-links">
 
-            <a href="#">home</a>
-            <a href="#">projects</a>
-            <a href="#">contact</a>
+            <button onClick={handleHomeScroll} >home</button>
+            <button onClick={handleProjectsScroll} >projects</button>
+            <button onClick={handleContactScroll} >contacts</button>
+
 
         </div>
         <div className="burger-icon"onClick={handleToggle}>
@@ -33,7 +34,11 @@ const Nav = () => {
         </div>
  
       </div>
-    <HamMenu burgerToggle={burgerToggle}/>
+    <HamMenu burgerToggle={burgerToggle}
+     handleHomeScroll={handleHomeScroll}
+     handleProjectsScroll={handleProjectsScroll}
+     handleContactScroll={handleContactScroll}
+     />
 
       
     </div>

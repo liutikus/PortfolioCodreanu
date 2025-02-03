@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
 import { CiHome, CiDesktop, CiCircleInfo } from "react-icons/ci";
+import * as motion from "motion/react-client";
 
 
-const HamMenu = ({burgerToggle}) => {
+
+const HamMenu = ({burgerToggle,handleContactScroll, handleProjectsScroll, handleHomeScroll}) => {
 
 function handleToggle (input){
   const name = burgerToggle? `${input} active` : `${input}`
@@ -20,13 +22,22 @@ function handleToggle (input){
                   <div className={handleToggle('first-icon')}
                   // onClick={handleClick}
                   >
-                    <a href="#"><CiHome /></a>
+                    <motion.button onClick={handleHomeScroll}
+                     whileHover={{ scale: 0.9 }}
+                     whileTap={{ scale:1}}
+                    ><CiHome /></motion.button>
                 </div>
                 <div className={handleToggle('second-icon')}>
-                  <a href="#"><CiDesktop/></a>
+                  <motion.button onClick={handleProjectsScroll}
+                   whileHover={{ scale: 0.9 }}
+                   whileTap={{ scale:1}}
+                  ><CiDesktop/></motion.button>
                 </div>
                 <div className={handleToggle('third-icon')}>
-                  <a href="#"><CiCircleInfo /></a>
+                  <motion.button onClick={handleContactScroll}
+                   whileHover={{ scale: 0.9 }}
+                   whileTap={{ scale:1}}
+                  ><CiCircleInfo /></motion.button>
                 </div>
                 
                 </div>

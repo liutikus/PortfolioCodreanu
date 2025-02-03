@@ -1,0 +1,151 @@
+.input-message-container{
+    color: #f8f9fa;
+    margin-block: 100px;
+   padding-inline-start: 3em;
+    width: 100%;
+    display: flex;
+    
+   
+}
+.input-message-container form {
+    border-right-style: solid;
+    border-width: 1px;
+    width: 50%;
+}
+
+.input-message-container label{
+    display: block;
+    padding-block-start: 20px;
+    padding-block-end:5px ;
+    padding-inline-start: 0.5em;
+    font-size: 2.5em;
+}
+.input-name input, .input-mail input, .input-text textarea{
+   border-style: solid;
+   border-color: #212529;
+   border-width: 1px;
+   background-color: #212529;
+   outline: none;
+
+}
+
+.input-name input:focus, .input-mail input:focus, .input-text textarea:focus{
+    border-color: #495057;
+}
+
+
+.input-name input, .input-mail input{
+    width: 60%;
+    font-size: 1.5;
+    height: 35px;
+    font-size: 1.5em;
+    color: #adb5bd;
+    padding-inline-start: 0.5em;
+    border-radius: 10px;
+   
+}
+
+.input-text textarea{
+    resize: none;
+    width: 90% !important;
+    border-radius: 10px;
+    color: #adb5bd;
+    font-size: 1.2em;
+    padding-inline-start: 0.5em;
+    height: 200px !important;
+
+}
+
+.send-btn{
+    background-color: #212529 ;
+   border-style: solid;
+   border-width: 1px;
+   border-color: #adb5bd;
+   font-size: 2em;
+   margin:10px ;
+   padding: 5px;
+   border-radius: 10px;
+   color: #adb5bd;
+
+   
+
+}
+
+.send-btn:hover{
+    background-color: #adb5bd;
+    color: #212529;
+    cursor: pointer;
+}
+
+.toast{
+    position: fixed;
+    top: 0;
+    left: 45%;
+    margin-top: 2em;
+    background-color: #232425;
+    padding-inline: 3em ;
+    padding-block: 1em;
+    color: #adb5bd;
+    border-radius: 10px;
+    color: #adb5bd;    
+}
+
+.toast p{
+    display: inline;
+    
+}
+
+.toast span{
+    font-size: 1.2em;
+    
+}
+
+.contacts-container{
+    padding-inline-start: 20px;
+    padding-top: 50px;
+}
+
+.contacts-container span, p, button{
+    display: inline;
+}
+
+.contacts-container button{
+    font-size: 1em;
+}
+
+.icons{
+     display: flex; 
+    justify-content: center;
+    padding-top: 2em ;
+    overflow-y: hidden;
+}
+
+.icons a{
+    font-size: 3em;
+    color: #adb5bd;
+    padding-inline: 0.2em;
+}
+
+
+
+@media screen and (max-width: 950px) {
+.input-message-container{
+    display: block;
+}
+
+.input-message-container form {
+    border-right-style: none;
+    border-bottom-style: solid;
+    border-width: 1px;
+    width: 90%;
+}
+}
+@media screen and (max-width: 500px) {
+.input-message-container{
+    padding-inline-start: 1.5em;
+    margin-top: 0px;
+}
+.contacts-container{
+    padding-inline: 0;
+}
+}

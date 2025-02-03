@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import Nav from "./Nav/Nav";
 import "./index.css";
 import VideoBack from "./Components/VideoBack";
@@ -21,6 +21,7 @@ import {
 import Contact from "./Contact/Contact";
 import AboutMe from "./AboutMe/AboutMe";
 import CursorHover from "./Components/CursorHover";
+import FooterP from "./FooterP/FooterP";
 
 const App = () => {
   const images = [
@@ -38,17 +39,35 @@ const App = () => {
     image,
   }));
 
+  const homeRef = useRef(null)
+  const projectsRef = useRef(null)
+  const contactRef = useRef(null)
+
+
+const handleClickScroll = (sectionRef)=>{
+  sectionRef.current?.scrollIntoView({behavior: 'smooth'});
+  console.log('sadfsdaf')
+}
+
+
   return (
     <div>
-      <Nav />
+      <Nav innerRef={homeRef}  
+      handleHomeScroll={()=>handleClickScroll(homeRef)}
+      handleProjectsScroll={()=>handleClickScroll(projectsRef)}
+      handleContactScroll={()=>handleClickScroll(contactRef)}
+
+      />
       <VideoBack />
       <Info />
       <InfiniteScrol images={images} direction='negative' speed={22000} />
       <AboutMe />
       <InfiniteScrol images={images} direction='positive' speed={22000} />
-
-      <Projects />
-      <Contact />
+      <Projects innerRef={projectsRef} />
+      <Contact innerRef={contactRef} />
+      <FooterP  
+      handleHomeScroll={()=>handleClickScroll(homeRef)}
+      />
       <Testprojects />
       <CursorHover />
     </div>
