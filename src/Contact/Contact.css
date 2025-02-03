@@ -87,7 +87,8 @@
     padding-block: 1em;
     color: #adb5bd;
     border-radius: 10px;
-    color: #adb5bd;    
+    color: #adb5bd;  
+      
 }
 
 .toast p{
@@ -147,5 +148,9 @@
 }
 .contacts-container{
     padding-inline: 0;
+}
+
+.toast{
+    left: 25%;
 }
 }
