@@ -28,7 +28,7 @@ const Contact = ({innerRef}) => {
         () => {
           console.log("SUCCESS!");
           setToastSend({
-            text: "sent successfully",
+            text: "sent ",
             color: "#aae8aa",
             icons: <CiCircleCheck />,
           });
