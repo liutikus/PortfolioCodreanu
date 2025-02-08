@@ -24,6 +24,10 @@
 
 }
 
+.card-projects a {
+  cursor:none
+}
+
 .title {
   font-size: 4em;
   /* padding: 0em 0em 0.2em 1em; */

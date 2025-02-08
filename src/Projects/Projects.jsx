@@ -151,12 +151,18 @@ const mouseLeaveImg = ()=>{
           onMouseLeave={mouseLeave}
           
         >
+          <a href="https://liutikus.github.io/KamuCoffe/"
+          target="_blank"
+          >
 
-          <img src={projectImg2} alt="zfg"
+          <img 
+          
+          src={projectImg2} alt="zfg"
           onMouseEnter={mouseEnterImg}
           onMouseLeave={mouseLeaveImg}
 
           />
+          </a>
 
 
           <p>a sleek and modern restaurant website featuring a stunning menu</p>
