@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Projects.css";
 import projectImg1 from "../assets/Screenshot (11).png";
+import projectImg2 from "/ProjectImg/ProjectKamuCoffee.png"
 import { motion } from "motion/react";
 import CursorHover from "../Components/CursorHover";
 
@@ -151,14 +152,14 @@ const mouseLeaveImg = ()=>{
           
         >
 
-          <img src={projectImg1} alt="zfg"
+          <img src={projectImg2} alt="zfg"
           onMouseEnter={mouseEnterImg}
           onMouseLeave={mouseLeaveImg}
 
           />
 
 
-          <p>a e-commerce website with advanced filtering</p>
+          <p>a sleek and modern restaurant website featuring a stunning menu</p>
         </motion.div>
         <motion.div
           initial={{ opacity: 0, x: 50 }}

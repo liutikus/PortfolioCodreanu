@@ -18,8 +18,9 @@
   padding: 1em;
   border-color: #adb5bd;
   border-width: 1px;
-  margin-inline-start: 2em;
+  margin-inline-start: 1em;
   cursor: none;
+  text-align: center;
 
 }
 
@@ -79,8 +80,15 @@
     height: 200px;
     width:330px;
   }
-  .second-card{
-    margin-inline-start: 2em;
+
+.projects-container {
+  margin-inline: 1em;
+  
+}
+.second-card{
+  margin-inline-start: 1em;
+ 
+  
 }
 }
 
@@ -97,6 +105,9 @@
     height: 180px;
     width: 320px;
   }
+.card-projects p {
+  display: block;
+}
 }
 
 @media only screen and (max-width: 500px) {
