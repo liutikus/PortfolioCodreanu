@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./Projects.css";
 import projectImg1 from "../assets/Screenshot (11).png";
 import projectImg2 from "/ProjectImg/ProjectKamuCoffee.png"
+import projectMovieImg from '/ProjectImg/movie-project-kamu.png'
 import { motion } from "motion/react";
 import CursorHover from "../Components/CursorHover";
 
@@ -128,14 +129,20 @@ const mouseLeaveImg = ()=>{
           onMouseEnter={mouseEnter}
           onMouseLeave={mouseLeave}
         >
-
-          <img src={projectImg1} alt="zfg"
+           <a href="https://liutikus.github.io/KamuCoffe/"
+          target="_blank"
+          >
+          <img src={projectImg2} alt="zfg"
           onMouseEnter={mouseEnterImg}
           onMouseLeave={mouseLeaveImg}
           />
+          </a>
 
 
-          <p>a e-commerce website with advanced filtering</p>
+          <p>a sleek and modern restaurant website featuring a stunning menu.<br/>
+            <span className="anotation">Build using React </span>
+          </p>
+          
         </motion.div>
         
         <motion.div
@@ -151,21 +158,22 @@ const mouseLeaveImg = ()=>{
           onMouseLeave={mouseLeave}
           
         >
-          <a href="https://liutikus.github.io/KamuCoffe/"
-          target="_blank"
-          >
+         
 
           <img 
           
-          src={projectImg2} alt="zfg"
+          src={projectMovieImg} alt="zfg"
           onMouseEnter={mouseEnterImg}
           onMouseLeave={mouseLeaveImg}
 
           />
-          </a>
+         
 
 
-          <p>a sleek and modern restaurant website featuring a stunning menu</p>
+          <p>  a website for browsing movies, TV shows, and cast details <br/>
+          <span className="anotation">Build using React <br/>(now in development) </span>
+          
+          </p>
         </motion.div>
         <motion.div
           initial={{ opacity: 0, x: 50 }}
@@ -188,7 +196,10 @@ const mouseLeaveImg = ()=>{
           />
 
 
-          <p>a e-commerce website with advanced filtering</p>
+          <p>a e-commerce website with advanced filtering <br/>
+          <span className="anotation">Build using React <br/>(now in development) </span>
+          
+          </p>
         </motion.div>
         <motion.div className='cursor'
           variants={variants}
