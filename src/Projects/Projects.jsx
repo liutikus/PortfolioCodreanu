@@ -171,7 +171,7 @@ const mouseLeaveImg = ()=>{
 
 
           <p>  a website for browsing movies, TV shows, and cast details <br/>
-          <span className="anotation">Build using React <br/>(now in development) </span>
+          <span className="anotation">Build using React <br/></span>
           
           </p>
         </motion.div>
