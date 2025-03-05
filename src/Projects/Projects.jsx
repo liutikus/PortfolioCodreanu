@@ -158,7 +158,7 @@ const mouseLeaveImg = ()=>{
           onMouseLeave={mouseLeave}
           
         >
-         
+         <a href="https://liutikus.github.io/KamuMovies">
 
           <img 
           
@@ -167,7 +167,7 @@ const mouseLeaveImg = ()=>{
           onMouseLeave={mouseLeaveImg}
 
           />
-         
+         </a>
 
 
           <p>  a website for browsing movies, TV shows, and cast details <br/>
